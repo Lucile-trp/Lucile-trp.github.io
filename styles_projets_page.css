@@ -1,0 +1,272 @@
+/*GÉNÉRAL*/
+
+* {
+    font-family: Lato, sans-serif;
+    font-weight: 200;   
+}
+
+
+
+/*HEADER*/
+
+
+header{
+    margin: 30px 30px 0px 30px;
+    height: 130px;
+}
+
+h1 {
+    font-size: 46px;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    text-align: center;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+
+    font-weight: 200;
+
+    margin: 0px;
+}
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+
+.list:hover {
+    text-decoration-line: underline;  
+    text-decoration-color: #af4042;
+}
+
+a:visited {
+    color: black;
+}
+
+header nav ul {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+header nav ul li {
+    float: left;
+}
+
+#float-left li{
+    margin-left: 60px;
+}
+
+#float-right {
+    float: right;
+}
+
+#float-right li{
+    margin-right: 60px;
+}
+
+.line {
+  width: auto;
+  height: 0;
+  border: 1px solid #af4042;
+  margin: 10px 170px 0px 170px;
+}
+
+/*FIN HEADER*/
+
+
+
+
+/*CONTENT*/
+
+
+.choix_domaines{
+    margin: 20px 80px 40px 80px;
+}
+
+.choix_domaines ul {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.choix_domaines ul li {
+    margin: 0px 10px 10px 10px;  
+}
+
+.choix_domaines ul li button {
+    text-decoration: none;
+    border: none;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.choix_domaines ul li button:hover {
+    text-decoration-line: underline;  
+    text-decoration-color: #af4042;
+}
+
+
+.content-body{
+    margin: 20px 80px 40px 80px;
+    width: auto ;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+section {
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    justify-content: center;
+    margin: 0px 20px 0px 20px;
+}
+
+section img {
+    width: 100%;
+    height: 300px;
+    border: 2px solid #af4042; 
+    object-fit: cover;
+}
+
+.content-body section h6 {
+    text-align: left;
+    font-weight: 400;
+    margin-top:15px;
+    margin-bottom: 0px;
+    font-size: 30px;     
+}
+
+.content-body section p{
+    text-align: left;
+    font-style: italic;
+    margin-bottom: 0px;
+    padding: 0px;
+    font-size: 13px;
+    
+}
+
+.line_separator_projects {
+    width: auto;
+    margin: 20px 50px 20px 0px;
+    border: 0.5px solid black;
+}
+
+/*FILTER-CAT*/
+
+.show {
+	display: block;
+}
+
+.is-hidden {
+  display: none;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    width: auto;
+    height: 50px;
+    margin: 10px 20px 0px 20px;
+    display: block;
+}
+
+h5 {
+    color:gray;
+    margin-top: 30px;
+    margin-left: 60px;
+}
+
+/*FIN FOOTER*/
+
+
+
+
+/* RESPONSIVE */
+
+/*Lorsque la taille de l'écran est inferieure à 1023px.*/
+
+
+
+
+@media (max-width: 1023px)
+{
+    /*HEADER*/
+     header nav ul {
+        margin-top: 15px;
+    }
+    
+    #float-left li{
+        margin-left: 25px;
+    }
+
+    #float-right li{
+        margin-right: 25px;
+    }
+    
+    .line {
+        margin: 10px 50px 0px 50px;
+    }
+    
+    
+     /*CONTENT*/
+    .content-body {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px 10px 40px 10px;
+    }
+    
+    section {
+        width: 100%;
+    }
+}
+    
+    
+    
+    
+    
+
+/*Lorsque la taille de l'écran est inferieure à 496px.*/
+
+@media (max-width: 700px)
+{
+    
+    /*HEADER*/
+    
+    header nav ul {
+        margin-top: 15px;
+    }
+    
+    #float-left li{
+        margin-left: 20px;
+    }
+
+    #float-right li{
+    margin-right: 20px;
+}
+    .line {
+  margin: 10px 10px 0px 10px;
+}
+    
+    section {
+    width: 100%;
+
+}
+    .content-body{
+    margin: 20px 50px 40px 50px;
+
+}

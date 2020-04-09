@@ -1,0 +1,338 @@
+/*HEADER*/
+
+* {
+    font-family: Lato, sans-serif;
+    font-weight: 200;
+}
+
+header{
+    margin: 30px 30px 0px 30px;
+    height: 130px;
+}
+
+h1 {
+    font-family: Lato; 
+    font-size: 46px;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family: lato;
+    font-weight: 200;
+    text-align: center;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    font-family: lato;
+    font-weight: 200;
+    color: black;
+    margin: 0px;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+
+.list:hover {
+    text-decoration-line: underline;  
+    text-decoration-color: #af4042;
+
+}
+
+a:visited {
+    color: black;
+}
+
+
+header nav ul {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    padding-left: 0px;
+}
+
+header nav ul li {
+    float: left;
+}
+header nav ul li a {
+    color: black;
+}
+
+#float-left li{
+    margin-left: 60px;
+}
+
+#float-right {
+    float: right;
+}
+
+#float-right li{
+    margin-right: 60px;
+}
+
+.line {
+  width: auto;
+  height: 0;
+  border: 1px solid #af4042;
+  margin: 10px 170px 0px 170px;
+}
+
+/*FIN HEADER*/
+
+/*CONTENT*/
+
+.content-body{
+    margin: 20px 80px 40px 80px;
+    width: auto ;
+    height: auto;
+    display: block;
+
+}
+
+
+/*CONTENT SECTION 1*/
+
+div section nav ul  {
+    display: flex;
+    justify-content: center;
+}
+
+div section nav ul li{
+    margin-right: 50px;
+    margin-bottom: 30px;
+
+}
+
+div section nav ul li:hover {
+    text-decoration: underline;
+}
+
+div section nav ul li a {
+        font-weight: 600;
+        color: black;
+}
+
+.introduction{
+    margin-left: 150px;
+    margin-bottom: 200px;
+}
+
+div section .block_couleur {
+    background-color: #af4042;
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    margin: 50px;
+}
+
+#ma_photo {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    position: relative;
+}
+
+h3 {
+    position: absolute;
+    margin-top: -200px;
+    color: white;
+    font-size: 31px;
+    font-weight: 300;
+    margin-left: 220px;
+    margin-right: 200px;
+}
+
+/*FIN CONTENT SECTION 1*/
+
+/*CONTENT SECTION 2*/
+
+.formations {
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right:150px;
+}
+
+.formations h4 {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.line_sections {
+    width: 200px;
+    height: 0;
+    border: 1px solid #af4042;
+    margin: 10px 170px 30px 0px;
+    
+}
+
+.formations ul {
+    max-width: 800px;
+}
+
+.formations ul li {
+    margin: 10px 0px 10px 40px;
+}
+
+/*CONTENT SECTION 3*/
+
+.competences {
+    margin: 0px 150px 0px 150px;
+    display: block;
+}
+
+.competences h4 {
+    padding: 0px;
+    margin: 0px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.competences ul {
+    margin: 0px 0px 30px 40px;
+
+    
+    
+}
+
+.competences ul h6 {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0px 0px 10px 0px;
+    
+}
+
+
+
+/*FOOTER*/
+footer {
+    width: auto;
+    height: 50px;
+    margin: 10px 20px 0px 20px;
+    display: block;
+}
+h5 {
+    font-family: Lato;
+    font-weight: 200;
+    color:gray;
+    margin-top: 30px;
+    margin-left: 60px;
+    
+}
+
+/* RESPONSIVE */
+
+/*Lorsque la taille de l'écran est inferieure à 1023px.*/
+
+@media (max-width: 1023px){
+    
+    .content-body{
+    margin: 20px 10px 40px 10px;
+
+}
+    
+    h3 {
+        
+    font-size: 25px;
+    margin-right: 50px;
+}
+    
+    /*CONTENT SECTION 2*/
+
+.formations {
+    margin: 150px 100px 0px 100px;
+}
+    
+    /*CONTENT SECTION 3*/
+
+.competences {
+    margin: 150px 100px 0px 100px;
+}
+    
+    
+}
+
+/*Lorsque la taille de l'écran est inferieure à 496px.*/
+
+@media (max-width: 700px)
+{
+    
+     /*HEADER*/
+    
+    header nav ul {
+        margin-top: 15px;
+    }
+    
+    #float-left li{
+        margin-left: 20px;
+    }
+
+    #float-right li{
+    margin-right: 20px;
+}
+    .line {
+  margin: 10px 10px 0px 10px;
+}
+    
+    /*FIN HEADER*/
+    
+    
+    /*SECTION 1 INTRODUCTION*/
+    div section .block_couleur {
+        display: none;
+    }
+    
+    .introduction{
+        margin: 0px 50px 200px 50px;
+}
+    
+    #ma_photo{
+        width: 100%;
+        height: 250px;
+        border: 2px solid #af4042;
+        
+    }
+    
+    h3 {   
+        font-size: 20px;
+        color: black;
+        position: relative;
+        font-weight: 500;
+        margin: 20px 0px 0px 0px;
+        color: #af4042;
+    }
+    
+    /*SECTION 2 FORMATION*/
+    
+    .formations {
+        margin-bottom: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+}
+    
+    .formations ul {
+        padding-left: 0px;
+    }
+    
+    .formations ul li {
+        margin: 10px 0px 10px 0px;
+}
+    
+    /*SECTION 3 COMPETENCES*/
+    
+    .competences {
+        margin: 0px 50px 0px 50px;
+}
+    .competences ul {
+        margin: 0px 0px 30px 0px;
+        padding: 0px; 
+}
+ 
+}
